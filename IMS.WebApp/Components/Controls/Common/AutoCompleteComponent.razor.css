@@ -1,0 +1,23 @@
+﻿.search-result {
+    overflow-y: scroll;
+    max-height: 300px;
+    border: 1px solid silver;
+    padding-top: 10px
+}
+
+    .search-result ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    .search-result li {
+        cursor: pointer;
+    }
+
+.selected{
+    background-color: antiquewhite;
+}

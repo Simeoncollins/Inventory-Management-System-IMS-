@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.WebApp", "IMS.WebApp\IMS.WebApp.csproj", "{075ECA18-5082-4ADD-A802-4CBC614E4738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.UseCases", "IMS.UseCases\IMS.UseCases.csproj", "{2B6AF241-3603-41C4-81A6-069B138C2E89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.CoreBusiness", "IMS.CoreBusiness\IMS.CoreBusiness.csproj", "{21A68882-E14C-4FEB-8035-D198CDA0C0FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IMS.Plugins", "IMS.Plugins", "{EBCA034C-00DC-4A78-A259-8256D6EC5527}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.Plugins.InMemory", "IMS.Plugins\IMS.Plugins.InMemory\IMS.Plugins.InMemory.csproj", "{7892E9B1-FFD0-4898-B27B-214ED89E44C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS.Plugin.EFCoreSqlServer", "IMS.Plugins\IMS.Plugin.EFCoreSqlServer\IMS.Plugin.EFCoreSqlServer.csproj", "{ADB7D41C-9358-4087-9B6F-01A6660F8033}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{075ECA18-5082-4ADD-A802-4CBC614E4738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{075ECA18-5082-4ADD-A802-4CBC614E4738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{075ECA18-5082-4ADD-A802-4CBC614E4738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{075ECA18-5082-4ADD-A802-4CBC614E4738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B6AF241-3603-41C4-81A6-069B138C2E89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B6AF241-3603-41C4-81A6-069B138C2E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B6AF241-3603-41C4-81A6-069B138C2E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B6AF241-3603-41C4-81A6-069B138C2E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A68882-E14C-4FEB-8035-D198CDA0C0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A68882-E14C-4FEB-8035-D198CDA0C0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A68882-E14C-4FEB-8035-D198CDA0C0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A68882-E14C-4FEB-8035-D198CDA0C0FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7892E9B1-FFD0-4898-B27B-214ED89E44C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7892E9B1-FFD0-4898-B27B-214ED89E44C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7892E9B1-FFD0-4898-B27B-214ED89E44C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7892E9B1-FFD0-4898-B27B-214ED89E44C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB7D41C-9358-4087-9B6F-01A6660F8033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB7D41C-9358-4087-9B6F-01A6660F8033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB7D41C-9358-4087-9B6F-01A6660F8033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB7D41C-9358-4087-9B6F-01A6660F8033}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7892E9B1-FFD0-4898-B27B-214ED89E44C6} = {EBCA034C-00DC-4A78-A259-8256D6EC5527}
+		{ADB7D41C-9358-4087-9B6F-01A6660F8033} = {EBCA034C-00DC-4A78-A259-8256D6EC5527}
+	EndGlobalSection
+EndGlobal

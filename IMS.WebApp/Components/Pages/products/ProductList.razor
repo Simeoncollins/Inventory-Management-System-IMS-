@@ -1,0 +1,17 @@
+﻿@page "/products"
+
+@attribute [Authorize(Policy = "Inventory")]
+
+<h3>Product List</h3>
+<br />
+<SearchComponent Onsearch="HandleSearch"></SearchComponent>
+<br />
+<ProductListComponent SearchProductFilter="@productNameToSearch"></ProductListComponent>
+<br />
+<a href="/addProducts" class="btn btn-light btn-outline-primary">Add Product</a>
+@code {
+	private string? productNameToSearch;
+	private void HandleSearch(string searchFiler){
+		productNameToSearch = searchFiler;
+	}
+}
