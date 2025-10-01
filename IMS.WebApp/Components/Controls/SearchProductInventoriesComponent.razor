@@ -29,6 +29,11 @@
 			HandleSearch();
 		}
 	}
+
+	protected override async Task OnInitializedAsync()
+	{
+		inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync()).ToList();
+	}
 	private List<Inventory> inventories = new List<Inventory>();
 
 	private async Task HandleSearch(){

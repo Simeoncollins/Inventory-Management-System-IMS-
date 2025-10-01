@@ -42,7 +42,7 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("Productions", policy => policy.RequireClaim("Department", "ProductionManagement"));
 });
 
-var connectionString = builder.Configuration.GetConnectionString("IMSAccounts") ?? throw new InvalidOperationException("Connection string 'IMSAccounts' not found.");
+var connectionString = builder.Configuration.GetConnectionString("InventoryManagement");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -104,6 +104,8 @@ builder.Services.AddTransient<ISellProductUseCase, SellProductUseCase>();
 builder.Services.AddTransient<ISearchInventoryTransactionUseCase, SearchInventoryTransactionUseCase>();
 builder.Services.AddTransient<ISearchProductTransactionUseCase, SearchProductTransactionUseCase>();
 
+// Force Production environment
+//builder.Environment.EnvironmentName = Environments.Production;
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
