@@ -47,7 +47,7 @@ The project supports two data store options:
           "InventoryManagement": "Your-SQL-Server-Connection-String"
         }
         ```  
-     3. Open **Package Manager Console** in Visual Studio and run:  
+     3. Open **Package Manager Console** in Visual Studio, select `IMS.Plugin.EFCoreSqlServer` as default project and run:  
         ```powershell
         Add-Migration InitialCreate
         Update-Database
